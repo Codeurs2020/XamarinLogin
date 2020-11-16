@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Login.Profile">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Profile" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            </Frame>
+
+            <Grid Margin="30,30,30,0" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Text="First Name" FontSize="18" />
+                <Label Grid.Row="1" x:Name="firstnameLabel" FontSize="22" FontAttributes="Bold" TextColor="Black" />
+                <Label Grid.Row="2" Text="Last Name" FontSize="18" />
+                <Label Grid.Row="3" x:Name="lastnameLabel" FontSize="22" FontAttributes="Bold" TextColor="Black" />
+                <Label Grid.Row="4" Text="Username" FontSize="18" />
+                <Label Grid.Row="5" x:Name="usernameLabel" FontSize="22" FontAttributes="Bold" TextColor="Black" />
+                <Label Grid.Row="6" Text="Email" FontSize="18" />
+                <Label Grid.Row="7" x:Name="emailLabel" FontSize="22" FontAttributes="Bold" TextColor="Black" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
